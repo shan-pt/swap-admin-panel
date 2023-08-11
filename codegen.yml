@@ -1,0 +1,16 @@
+overrideExisting: true
+schema:
+  [
+    'https://api.studio.thegraph.com/query/45189/synthswap-v3-analytics-base/v0.1.1',
+    'https://api.studio.thegraph.com/query/45189/synthswap-v3-farming-base/v0.0.1',
+    'https://api.studio.thegraph.com/query/45189/synthswap-blocklytics-base/v0.0.1',
+  ]
+documents: 'src/**/!(*.d).{ts,tsx}'
+generates:
+  ./src/state/data/generated.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-rtk-query:
+          importBaseApiFrom: './slice'
+          exportHooks: true
