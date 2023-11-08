@@ -28,7 +28,7 @@
     },
     {
       "name": "apeUSD-UMA Synthetic USD (Dec 2021)",
-      "address": "0x21055e27893aee4805283D86e4283Da64F8c72dd56",
+      "address": "0x645e27893aee4805283D86e4283Da64F8c72dd56",
       "symbol": "apeUSD-UMA-DEC21",
       "decimals": 18,
       "chainId": 1,

@@ -8,7 +8,7 @@ import { AppState } from 'state'
 
 // List of supported subgraphs. Note that the app currently only support one active subgraph at a time
 const CHAIN_SUBGRAPH_URL: Record<number, string> = {
-  [SupportedChainId.POLYGON]: 'https://api.studio.thegraph.com/query/45189/synthswap-v3-analytics-base/v0.1.1',
+  [SupportedChainId.POLYGON]: 'https://api.thegraph.com/subgraphs/name/swaprhq/algebra-v19',
 }
 
 export const api = createApi({

@@ -45,7 +45,7 @@ export default function InfiniteFarmingPage() {
   return (
     <>
       <Helmet>
-        <title>SynthSwap — Infinite Farming</title>
+        <title>Swapr — Infinite Farming</title>
       </Helmet>
       <PageWrapper>
         <InnerWrapper gap="lg" justify="center">
@@ -61,7 +61,7 @@ export default function InfiniteFarmingPage() {
                   render={(props) => (
                     <>
                       <Helmet>
-                        <title>SynthSwap — Infinite Farming • Create event</title>
+                        <title>Swapr — Infinite Farming • Create event</title>
                       </Helmet>
                       <PageTitle title={'Create Infinite event'}></PageTitle>
                       {console.log(props)}
@@ -76,7 +76,7 @@ export default function InfiniteFarmingPage() {
                   render={(props) => (
                     <>
                       <Helmet>
-                        <title>SynthSwap — Farming • Create event</title>
+                        <title>Swapr — Farming • Create event</title>
                       </Helmet>
                       <PageTitle title={'Create Infinite event'}></PageTitle>
                       <RedirectDuplicateTokenInfiniteFarmingIds {...props}></RedirectDuplicateTokenInfiniteFarmingIds>

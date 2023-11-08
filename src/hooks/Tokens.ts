@@ -180,8 +180,8 @@ export function useToken(tokenAddress?: string): Token | undefined | null {
 export function useCurrency(currencyId: string | undefined): Currency | null | undefined {
   const { chainId } = useActiveWeb3React()
   let isETH
-  if (chainId === 0x2105) {
-    isETH = currencyId?.toUpperCase() === 'ETH'
+  if (chainId === 0x64) {
+    isETH = currencyId?.toUpperCase() === 'XDAI'
   }
   const token = useToken(isETH ? undefined : currencyId)
   const extendedEther = useMemo(() => (chainId ? ExtendedEther.onChain(chainId) : undefined), [chainId])

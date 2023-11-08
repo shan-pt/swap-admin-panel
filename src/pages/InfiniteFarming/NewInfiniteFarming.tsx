@@ -338,8 +338,8 @@ export function NewInfiniteFarming({
 
       let chainSymbol
 
-      if (chainId === 0x2105) {
-        chainSymbol = 'ETH'
+      if (chainId === 0x64) {
+        chainSymbol = 'XDAI'
       }
 
       if (currencyIdNew === currencyIdOther) {

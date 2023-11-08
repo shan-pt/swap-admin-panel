@@ -23,7 +23,7 @@ export const WETH9_EXTENDED: { [chainId: number]: Token } = {
     '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83',
     18,
     'WFTM',
-    'Wrapped ETH'
+    'Wrapped XDAI'
   ),
 }
 

@@ -24,7 +24,7 @@ import QuestionHelper from 'components/QuestionHelper'
 import useTheme from 'hooks/useTheme'
 
 function currencyKey(currency: Currency): string {
-  return currency.isToken ? currency.address : 'ETH'
+  return currency.isToken ? currency.address : 'XDAI'
 }
 
 const StyledBalanceText = styled(Text)`
@@ -138,7 +138,7 @@ function CurrencyRow({
           {!currency.isNative && !isOnSelectedList && customAdded ? (
             <Trans>{currency.name} • Added by user</Trans>
           ) : (
-            'ETH'
+            'XDAI'
           )}
         </TYPE.darkGray>
       </Column>

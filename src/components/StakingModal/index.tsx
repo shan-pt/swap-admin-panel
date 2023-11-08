@@ -69,7 +69,7 @@ export default function StakingModal({
                 marginBottom: '1rem',
               }}
             >
-              <Trans>To stake your NFT you should approve SynthSwap to use it</Trans>
+              <Trans>To stake your NFT you should approve Swapr to use it</Trans>
             </div>
             <button
               style={{

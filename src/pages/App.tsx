@@ -85,7 +85,7 @@ export default function App() {
               <Route strict path="/infinite-farming" component={InfiniteFarmingPage} />
               <Route strict path="/infinite-events" component={InfiniteEvents} />
               <Route strict path="/">
-                <AdminTitle>SynthSwap V3 Admin Panel</AdminTitle>
+                <AdminTitle>Swapr V3 Admin Panel</AdminTitle>
               </Route>
             </Switch>
             <Marginer />

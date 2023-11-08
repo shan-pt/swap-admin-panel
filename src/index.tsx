@@ -34,7 +34,7 @@ if (!!window.ethereum) {
 const GOOGLE_ANALYTICS_ID: string | undefined = process.env.REACT_APP_GOOGLE_ANALYTICS_ID
 
 const client = new ApolloClient({
-  uri: 'https://api.studio.thegraph.com/query/45189/synthswap-v3-analytics-base/v0.1.1',
+  uri: 'https://api.thegraph.com/subgraphs/name/swaprhq/algebra-v19',
   cache: new InMemoryCache(),
 })
 

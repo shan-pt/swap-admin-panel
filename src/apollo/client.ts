@@ -7,7 +7,7 @@ export const healthClient = new ApolloClient({
 })
 
 export const blockClient = new ApolloClient({
-    uri: 'https://api.studio.thegraph.com/query/45189/synthswap-blocklytics-base/v0.0.1',
+    uri: 'https://api.thegraph.com/subgraphs/name/swaprhq/algebrablocks-v19',
     cache: new InMemoryCache(),
     queryDeduplication: true,
     defaultOptions: {
@@ -22,7 +22,7 @@ export const blockClient = new ApolloClient({
 })
 
 export const client = new ApolloClient({
-    uri: 'https://api.studio.thegraph.com/query/45189/synthswap-v3-analytics-base/v0.1.1',
+    uri: 'https://api.thegraph.com/subgraphs/name/swaprhq/algebra-v19',
     cache: new InMemoryCache(),
     queryDeduplication: true,
     defaultOptions: {
@@ -37,7 +37,7 @@ export const client = new ApolloClient({
 })
 
 export const farmingClient = new ApolloClient({
-    uri: 'https://api.studio.thegraph.com/query/45189/synthswap-v3-farming-base/v0.0.1',
+    uri: 'https://api.thegraph.com/subgraphs/name/swaprhq/algebrafarming-v19',
     cache: new InMemoryCache(),
     queryDeduplication: true,
     defaultOptions: {

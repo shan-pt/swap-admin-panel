@@ -4,7 +4,7 @@ import optimismLogoUrl from 'assets/svg/optimism_logo.svg'
 export enum SupportedChainId {
   // BINANCE = 0x61,
   // POLYGON = 0x13881,
-  POLYGON = 0x2105
+  POLYGON = 0x64
 }
 
 export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
@@ -41,6 +41,6 @@ export const CHAIN_INFO: ChainInfo = {
     docs: 'https://algebra.finance/',
     explorer: 'https://polygonscan.com/',
     infoLink: 'https://algebra.finance',
-    label: 'ETH',
+    label: 'XDAI',
   },
 }

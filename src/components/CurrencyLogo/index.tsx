@@ -48,7 +48,7 @@ export default function CurrencyLogo({
 
   let logo
 
-  if (chainId === 0x2105) {
+  if (chainId === 0x64) {
     logo = EthereumLogo
   }
 

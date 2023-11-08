@@ -109,8 +109,8 @@ export function CurrencySearch({
 
   let chainSymbol
 
-  if (chainId === 0x2105) {
-    chainSymbol = 'ETH'
+  if (chainId === 0x64) {
+    chainSymbol = 'XDAI'
   }
 
   ether.name = chainSymbol
@@ -118,7 +118,7 @@ export function CurrencySearch({
 
   const filteredSortedTokensWithETH: Currency[] = useMemo(() => {
     const s = debouncedQuery.toLowerCase().trim()
-    if (s === 'f' || s === 'fa' || s === 'fan' || s === 'fant' || s === 'ETH' || s === 'ETH') {
+    if (s === 'x' || s === 'xd' || s === 'xda' || s === 'xdai') {
       return ether ? [ether, ...filteredSortedTokens] : filteredSortedTokens
     }
     return filteredSortedTokens

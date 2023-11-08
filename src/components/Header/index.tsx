@@ -239,15 +239,15 @@ export default function Header() {
 
   let chainValue
 
-  if (chainId === 0x2105) {
-    chainValue = 'ETH'
+  if (chainId === 0x64) {
+    chainValue = 'XDAI'
   }
 
   return (
     <HeaderFrame showBackground={scrollY > 45}>
       <Title href=".">
         <AlgIcon>
-          <img width={'160px'} src={'https://app.zyberswap.io/header.png'} alt="logo" />
+          <img width={'160px'} src={'https://swapr.liquidity.eth.limo/static/media/swapr-logo.763fce338b3827b675cf717fd40029ba.svg'} alt="logo" />
         </AlgIcon>
       </Title>
       <HeaderLinks>
@@ -284,7 +284,7 @@ export default function Header() {
             </UNIWrapper>
           )} */}
           <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
-            {chainId === 0x2105 && account && userEthBalance ? (
+            {chainId === 0x64 && account && userEthBalance ? (
               <BalanceText style={{ flexShrink: 0 }} pl="0.75rem" pr="0.5rem" fontWeight={500}>
                 {userEthBalance?.toSignificant(3)} {chainValue}{' '}
               </BalanceText>

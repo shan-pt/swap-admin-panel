@@ -2145,8 +2145,8 @@ msgstr "{0} Disetor"
 
 #: src/components/Header/index.tsx
 #: src/components/earn/PoolCard.tsx
-msgid "{0} ETH"
-msgstr "{0} ETH"
+msgid "{0} XDAI"
+msgstr "{0} XDAI"
 
 #: src/components/Header/NetworkCard.tsx
 msgid "{0} Explorer"

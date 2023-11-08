@@ -12,11 +12,11 @@ import { NetworkConnector } from './NetworkConnector'
 const WALLETCONNECT_BRIDGE_URL = process.env.REACT_APP_WALLETCONNECT_BRIDGE_URL
 
 const NETWORK_URLS: { [key in SupportedChainId]: string } = {
-  [SupportedChainId.POLYGON]: 'https://mainnet.base.org',
+  [SupportedChainId.POLYGON]: 'https://gnosis.blockpi.network/v1/rpc/public',
 }
 export const network = new NetworkConnector({
   urls: NETWORK_URLS,
-  defaultChainId: 0x2105,
+  defaultChainId: 0x64,
 })
 
 let networkLibrary: Web3Provider | undefined

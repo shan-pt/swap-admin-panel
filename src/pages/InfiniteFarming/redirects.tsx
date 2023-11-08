@@ -17,8 +17,8 @@ export function RedirectDuplicateTokenInfiniteFarmingIds(
   // prevent weth + eth
   let symbol
 
-  if (chainId === 0x2105) {
-    symbol = 'ETH'
+  if (chainId === 0x64) {
+    symbol = 'XDAI'
   }
 
   const isETHOrWETHA =

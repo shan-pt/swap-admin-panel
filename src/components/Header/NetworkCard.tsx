@@ -202,7 +202,7 @@ export default function NetworkCard() {
           alignItems: 'center',
         }}
       >
-        <span>Base</span>
+        <span>Gnosis</span>
       </div>
     )
   }

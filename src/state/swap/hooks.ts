@@ -38,8 +38,8 @@ export function useSwapActionHandlers(): {
 
   let symbol
 
-  if (chainId === 0x2105) {
-    symbol = 'ETH'
+  if (chainId === 0x64) {
+    symbol = 'XDAI'
   }
 
   const onCurrencySelection = useCallback(
@@ -233,8 +233,8 @@ export function useDerivedSwapInfo(toggledVersion: Version): {
 function parseCurrencyFromURLParameter(urlParam: any, chainId: number): string {
   let chainSymbol
 
-  if (chainId === 0x2105) {
-    chainSymbol = 'ETH'
+  if (chainId === 0x64) {
+    chainSymbol = 'XDAI'
   }
 
   if (typeof urlParam === 'string') {
@@ -269,8 +269,8 @@ export function queryParametersToSwapState(parsedQs: ParsedQs, chainId: number):
   let outputCurrency = parseCurrencyFromURLParameter(parsedQs.outputCurrency, chainId)
   if (inputCurrency === '' && outputCurrency === '') {
     // default to ETH input
-    if (chainId === 0x2105) {
-      inputCurrency = 'ETH'
+    if (chainId === 0x64) {
+      inputCurrency = 'XDAI'
     }
   } else if (inputCurrency === outputCurrency) {
     // clear output if identical

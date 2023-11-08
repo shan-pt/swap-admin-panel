@@ -1,9 +1,9 @@
 overrideExisting: true
 schema:
   [
-    'https://api.studio.thegraph.com/query/45189/synthswap-v3-analytics-base/v0.1.1',
-    'https://api.studio.thegraph.com/query/45189/synthswap-v3-farming-base/v0.0.1',
-    'https://api.studio.thegraph.com/query/45189/synthswap-blocklytics-base/v0.0.1',
+    'https://api.thegraph.com/subgraphs/name/swaprhq/algebra-v19',
+    'https://api.thegraph.com/subgraphs/name/swaprhq/algebrafarming-v19',
+    'https://api.thegraph.com/subgraphs/name/swaprhq/algebrablocks-v19',
   ]
 documents: 'src/**/!(*.d).{ts,tsx}'
 generates:
