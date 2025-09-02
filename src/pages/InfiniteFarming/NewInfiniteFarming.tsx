@@ -230,6 +230,7 @@ export function NewInfiniteFarming({
     params: { currencyIdA, currencyIdB, rewardTokenId, bonusRewardTokenId, tokenId, lockedTokenId },
   },
   history,
+  location,
 }: RouteComponentProps<{
   currencyIdA?: string
   currencyIdB?: string
@@ -246,9 +247,14 @@ export function NewInfiniteFarming({
   )
   const { position: existingPosition } = useDerivedPositionInfo(existingPositionDetails)
 
-  const [reward, setReward] = useState('')
+  // Extract query parameters from URL
+  const urlParams = new URLSearchParams(location.search)
+  const rewardFromUrl = urlParams.get('reward') || ''
+  const rateFromUrl = urlParams.get('rate') || ''
+
+  const [reward, setReward] = useState(rewardFromUrl)
   const [bonusReward, setBonusReward] = useState('')
-  const [rewardRate, setRewardRate] = useState('')
+  const [rewardRate, setRewardRate] = useState(rateFromUrl)
   const [bonusRewardRate, setBonusRewardRate] = useState('')
 
   const [minimalRange, setMinimalRange] = useState('')
@@ -291,6 +297,16 @@ export function NewInfiniteFarming({
   const { onRewardInput, onBonusRewardInput, onRewardRateInput, onBonusRewardRateInput } = useIncentiveHandlers()
 
   const toggleWalletModal = useWalletModalToggle()
+
+  // Initialize form values from URL parameters
+  useEffect(() => {
+    if (rewardFromUrl) {
+      onRewardInput(rewardFromUrl)
+    }
+    if (rateFromUrl) {
+      onRewardRateInput(rateFromUrl)
+    }
+  }, [rewardFromUrl, rateFromUrl, onRewardInput, onRewardRateInput])
 
   const [approvalReward, approveRewardCallback] = useApproveCallback(
     parsedAmounts[Field.REWARD_TOKEN],
