@@ -1,0 +1,14 @@
+[build]
+  # Since we're including the build folder in Git, we don't need to build
+  command = ""
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "16.20.2"
+  NPM_VERSION = "8.19.4"
+
+# Redirect all routes to index.html for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
