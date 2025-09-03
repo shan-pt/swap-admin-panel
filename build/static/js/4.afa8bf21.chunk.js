@@ -1,0 +1,2 @@
+(this["webpackJsonpalgebra-admin"]=this["webpackJsonpalgebra-admin"]||[]).push([[4],{847:function(n,i){},892:function(n,i){},894:function(n,i){},922:function(n,i){},940:function(n,i){},942:function(n,i){}}]);
+//# sourceMappingURL=4.afa8bf21.chunk.js.map
