@@ -318,7 +318,7 @@ export function NewInfiniteFarming({
     chainId ? INFINITE_FARMING_ADDRESS[chainId] : undefined
   )
 
-  const [hasBonusReward, toggleHasBonusReward] = useState(true)
+  const [hasBonusReward, toggleHasBonusReward] = useState(false)
 
   const showRewardApproval = approvalReward !== ApprovalState.APPROVED && !!parsedAmounts[Field.REWARD_TOKEN]
   const showBonusRewardApproval =
